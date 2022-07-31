@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="278.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ipCalController">
+   <children>
+      <Label fx:id="tb_EnteredIp" layoutX="233.0" layoutY="23.0" text="entered ip">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="tf_totalHost" layoutX="86.0" layoutY="168.0" text="Number of abvilable hosts" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label fx:id="tf_totalSubnet" layoutX="86.0" layoutY="148.0" text="Total possible subnets" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Button fx:id="tf_back" layoutX="55.0" layoutY="229.0" mnemonicParsing="false" text="get another subnet" />
+      <TextField fx:id="enter_subnet" layoutX="162.0" layoutY="50.0" prefHeight="25.0" prefWidth="173.0" promptText="How many subnet you need?" visible="false" />
+      <Button fx:id="get_subnet" layoutX="350.0" layoutY="50.0" mnemonicParsing="false" onAction="#getSubnet1" text="Get Subnet" visible="false" />
+      <Label fx:id="tb_EnteredIp1" layoutX="162.0" layoutY="23.0" text="entered ip">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_classs" layoutX="86.0" layoutY="109.0" text="Class" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_default_sub_mask" layoutX="86.0" layoutY="129.0" text="default subnet mask" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
